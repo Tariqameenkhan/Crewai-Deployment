@@ -1,0 +1,25 @@
+write_python_code:
+  description: |
+    Write Python solution for '{problem}' or provide clear rejection.
+    Rejection must include:
+    - Why it's not Python
+    - Examples of Python requests we handle
+  expected_output: |
+    Either:
+    - Production-ready Python code
+    OR
+    - Clear rejection message with Python-specific guidance
+  agent: python_developer_expert_1
+
+review_python_code:
+  description: |
+    Review ONLY Python code. For non-Python:
+    - Immediately reject
+    - Explain Python-only scope
+    - Provide Python code review examples
+  expected_output: |
+    Either:
+    - Optimized Python code with tests
+    OR
+    - Clear rejection with Python review examples
+  agent: python_developer_expert_2
