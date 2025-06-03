@@ -12,7 +12,7 @@ dependencies = [
 [project.scripts]
 kickoff = "peom.main:kickoff"
 plot = "peom.main:plot"
-kickoff1 = "peom.Knowledge:my_knowldge"
+run_crew = "peom.main:kickoff"
 
 
 
